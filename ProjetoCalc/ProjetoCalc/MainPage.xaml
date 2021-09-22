@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjetoCalc.MainPage"
+             BackgroundColor="MediumAquamarine">
+
+    <Grid BackgroundColor="Aquamarine" RowSpacing="0" ColumnSpacing="0" Margin="5,5,5,5">
+        <Label Text="" x:Name="lb0" FontSize="20" 
+               Grid.Row="0" Grid.ColumnSpan="4"
+               BackgroundColor="AliceBlue" Margin="5,10,5,5"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End" Padding="5" />
+        <Label Text="" x:Name="lb1" FontSize="50" 
+               Grid.Row="1" Grid.ColumnSpan="4"
+               BackgroundColor="AliceBlue"  Margin="5"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End" Padding="5"
+               />
+        <!--Linha 1-->
+        <Button Text="CE" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="3" Grid.Column="0"
+                Clicked="BtCe"  BorderRadius="7" Margin="2"/>
+        <Button Text="C" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="3" Grid.Column="1"
+                Clicked="BtC"  BorderRadius="7"  Margin="2"/>
+        <Button Text="Back" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+                Clicked="BtBack"  BorderRadius="7" Margin="2"/>
+        <!--Linha 2-->
+        <Button Text="7" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="4" Grid.Column="0"
+                Clicked="Bt7"  BorderRadius="7" Margin="2"/>
+        <Button Text="8" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="4" Grid.Column="1"
+                Clicked="Bt8"  BorderRadius="7" Margin="2"/>
+        <Button Text="9" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="4" Grid.Column="2"
+                Clicked="Bt9"  BorderRadius="7" Margin="2"/>
+        <Button Text="+" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="4" Grid.Column="3"
+                Clicked="BtSoma"  BorderRadius="7" Margin="2"/>
+        <!--Linha 3-->
+        <Button Text="4" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="5" Grid.Column="0"
+                Clicked="Bt4"  BorderRadius="7" Margin="2"/>
+        <Button Text="5" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="5" Grid.Column="1"
+                Clicked="Bt5"  BorderRadius="7" Margin="2"/>
+        <Button Text="6" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="5" Grid.Column="2"
+                Clicked="Bt6"  BorderRadius="7" Margin="2"/>
+        <Button Text="-" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="5" Grid.Column="3"
+                Clicked="BtSub"  BorderRadius="7" Margin="2"/>
+        <!--Linha 4-->
+        <Button Text="1" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="6" Grid.Column="0"
+                Clicked="Bt1"  BorderRadius="7" Margin="2"/>
+        <Button Text="2" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="6" Grid.Column="1"
+                Clicked="Bt2"  BorderRadius="7" Margin="2"/>
+        <Button Text="3" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="6" Grid.Column="2"
+                Clicked="Bt3"  BorderRadius="7" Margin="2"/>
+        <Button Text="*" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="6" Grid.Column="3"
+                Clicked="BtMult"  BorderRadius="7" Margin="2"/>
+        <!--Linha 5-->
+        <Button Text="0" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"
+                Clicked="Bt0"  BorderRadius="7" Margin="2"/>
+        <Button Text="=" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="7" Grid.Column="2"
+                Clicked="BtIgual"  BorderRadius="7" Margin="2"/>
+        <Button Text="/" FontSize="20" FontAttributes="Bold" 
+                BackgroundColor="#d6d6d3" Grid.Row="7" Grid.Column="3"
+                Clicked="BtDiv"  BorderRadius="7" Margin="2"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+
+</ContentPage>
